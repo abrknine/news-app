@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import News from './components/News';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoadingBar from 'react-top-loading-bar';
+
 
 
 export default class App extends Component {
@@ -11,8 +13,12 @@ export default class App extends Component {
     return (
       <div>
         <Router>
-    <Navbar/>
-
+     <Navbar/>
+    <LoadingBar
+        color='#f11946'
+        progress={10}
+        
+      />
     <Routes>
     <Route exact path="/business" element={
       <div className='container'>
