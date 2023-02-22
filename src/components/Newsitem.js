@@ -7,6 +7,15 @@ export class Newsitem extends Component {
     return (
       <div className="my-3">
         <div className="card" /*style={{width: '18rem'}}*/>
+          <div style={{
+            display:'flex',
+            justifyContent:'flex-end',
+            position:'absolute',
+            right:'0'
+          }}>
+            <span className=" badge rounded-pill bg-danger"
+              > {source.name}</span>
+          </div>
           <img
             src={
               !imageURL
@@ -33,13 +42,13 @@ export class Newsitem extends Component {
             >
               read more
             </a>
-            <span
+            {/* <span
               className="position-absolute top-0  translate-middle badge rounded-pill bg-danger"
               style={{ left: "85%", zIndex: "1" }}
             >
               {source.name}
               <span className="visually-hidden">unread messages</span>
-            </span>
+            </span> */}
           </div>
         </div>
       </div>
