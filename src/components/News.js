@@ -6,7 +6,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 const  News =(props)=> {
    const [articles, setArticles]=useState([]);
-   const [loading, setLoading]=useState(true);
+    const [loading, setLoading]=useState(true);
    const [page, setPage]=useState(1);
    const [totalResults, setTotalResults]=useState(0);
     //  document.title = `${capitalizeFirstLetter(
@@ -38,7 +38,6 @@ const  News =(props)=> {
 
   useEffect(()=>{
     updatenews();
-    
   },[])
 
   /* componentDidMount=async=>() {

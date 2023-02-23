@@ -20,7 +20,7 @@ const App=()=> {
     <LoadingBar
         height={4}
         color='#f11946'
-        progress={this.state.progress}
+        progress={progress}
          
       />
     <Routes>
